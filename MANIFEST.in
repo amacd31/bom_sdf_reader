@@ -1,0 +1,2 @@
+include versioneer.py
+include bom_sdf_reader/_version.py

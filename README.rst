@@ -20,8 +20,11 @@ The SDFReader class can be imported then instantiated as an object containing me
 .. code:: python
 
     import bom_sdf_reader
-    sdf_reader = bom_sdf_reader.SDFReader()
+    # Replace the credentials here with the username and password used to
+    # access the 7-day streamflow website
+    sdf_reader = bom_sdf_reader.SDFReader(('sdf_reg_username', 'sdf_reg_user_password'))
 
+    # Retrieve the current forecast for '410730'
     sdf_reader.get_forecast('410730')
 
 Notes
